@@ -57,9 +57,9 @@ exponential = Exponential <<< clamp 0 20
 
 -- | Convert a number to a string with a given format.
 toStringWith ∷ Format → Number → String
-toStringWith (Precision p)   = undefined //toPrecisionNative p
-toStringWith (Fixed p)       = undefined //toFixedNative p
-toStringWith (Exponential p) = undefined //toExponentialNative p
+toStringWith (Precision p)   = undefined -- toPrecisionNative p
+toStringWith (Fixed p)       = undefined -- toFixedNative p
+toStringWith (Exponential p) = undefined -- toExponentialNative p
 
 -- | Convert a number to a string via JavaScript's toString method.
 -- |
