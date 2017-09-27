@@ -30,9 +30,9 @@ module Data.Number.Format
 
 import Prelude
 
-foreign import toPrecisionNative ∷   Int → Number → String
-foreign import toFixedNative ∷       Int → Number → String
-foreign import toExponentialNative ∷ Int → Number → String
+{-- foreign import toPrecisionNative ∷   Int → Number → String --}
+{-- foreign import toFixedNative ∷       Int → Number → String --}
+{-- foreign import toExponentialNative ∷ Int → Number → String --}
 
 -- | The `Format` data type specifies how a number will be formatted.
 data Format
@@ -57,9 +57,9 @@ exponential = Exponential <<< clamp 0 20
 
 -- | Convert a number to a string with a given format.
 toStringWith ∷ Format → Number → String
-toStringWith (Precision p)   = toPrecisionNative p
-toStringWith (Fixed p)       = toFixedNative p
-toStringWith (Exponential p) = toExponentialNative p
+toStringWith (Precision p)   = undefined //toPrecisionNative p
+toStringWith (Fixed p)       = undefined //toFixedNative p
+toStringWith (Exponential p) = undefined //toExponentialNative p
 
 -- | Convert a number to a string via JavaScript's toString method.
 -- |
