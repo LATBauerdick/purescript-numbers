@@ -8,7 +8,7 @@ namespace Data_Number_Format {
 
   // foreign import toString :: Number -> String
   //
-  auto toString(const any& f, const any::array& xs) -> any;
+  auto toString(const any& f) -> any;
   /* inline auto toString(const any& x) -> any { */
   /*   return std::to_string((double)x); */
   /* } */
