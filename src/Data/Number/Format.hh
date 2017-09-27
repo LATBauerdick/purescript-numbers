@@ -3,14 +3,15 @@
 
 #include "PureScript/PureScript.hh"
 
-namespace Data_Show {
+namespace Data_Number_Format {
   using namespace PureScript;
 
   // foreign import toString :: Number -> String
   //
-  inline auto toString(const any& x) -> any {
-    return std::to_string((double)x);
-  }
+  auto toString(const any& f, const any::array& xs) -> any;
+  /* inline auto toString(const any& x) -> any { */
+  /*   return std::to_string((double)x); */
+  /* } */
 
   //>>>>>>>>>>>>>>>??????????????????????????<<<<<<<<<<<<<<<<<<<<
   //fix this
