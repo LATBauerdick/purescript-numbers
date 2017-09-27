@@ -13,6 +13,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
 #include "Format.hh"
+#include <string>
 
 namespace Data_Number_Format {
   using namespace PureScript;
